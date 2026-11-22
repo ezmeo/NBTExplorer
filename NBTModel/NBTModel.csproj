@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NBTExplorer.Model</RootNamespace>
     <AssemblyName>NBTModel</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Substrate">
-      <HintPath>..\References\Substrate.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -76,6 +73,12 @@
     <Compile Include="Data\Nodes\TagStringDataNode.cs" />
     <Compile Include="Utility\NaturalComparer.cs" />
     <Compile Include="Utility\SnapshotList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Substrate\SubstrateCS\Substrate (NET4).csproj">
+      <Project>{afe30e14-3f2f-4461-9f7d-147ab4dca4c3}</Project>
+      <Name>Substrate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
