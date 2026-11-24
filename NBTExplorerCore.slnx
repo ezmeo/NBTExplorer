@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NBTExplorerCore/NBTExplorerCore.csproj" />
+  <Project Path="NBTModelCore/NBTModel.csproj" />
+  <Project Path="NBTUtilCore/NBTUtil.csproj" />
+  <Project Path="Substrate/SubstrateNETCore/Substrate.csproj" />
+</Solution>
